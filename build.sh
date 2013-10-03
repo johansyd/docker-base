@@ -151,7 +151,7 @@ fi
 
 image=$2;
 dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )";
-image_dir="$dir/$image";
+image_dir="$dir/.$image";
 
 if [ ! -d "$image_dir" ]; then
     mkdir $image_dir;
